@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Web Students</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu" data-bs-boundary="viewport" data-bs-offset="0,8"
+                                style="max-width: calc(100vw - 32px);">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landings
+                            </a>
+                            <ul class="dropdown-menu" data-bs-boundary="viewport" data-bs-offset="0,8"
+                                style="max-width: calc(100vw - 32px);">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" data-bs-boundary="viewport" data-bs-offset="0,8"
+                                style="max-width: calc(100vw - 32px);">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu" data-bs-boundary="viewport" data-bs-offset="0,8"
+                                style="max-width: calc(100vw - 32px);">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center ms-auto gap-3 order-2 order-lg-3">
+                    <span
+                        class="d-inline-flex align-items-center justify-content-center border rounded-circle text-secondary position-relative"
+                        style="width: 40px; height: 40px;">
+                        <i class="bi bi-bell fs-6"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-2 border-white rounded-circle"></span>
+                    </span>
+
+                    <div class="nav-item dropdown list-unstyled ps-0">
+                        <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="assets/avatar-1.jpg" alt="User avatar" width="40" height="40"
+                                class="rounded-circle border">
+                            <span
+                                class="position-absolute bottom-0 end-0 translate-middle p-1 bg-success border border-2 border-white rounded-circle"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end p-0 shadow border-0 rounded-4 list-unstyled ps-0"
+                            style="min-width: 260px;">
+                            <li class="border-bottom">
+                                <div class="d-flex align-items-center p-3 gap-3">
+                                    <span class="position-relative d-inline-block">
+                                        <img src="assets/avatar-1.jpg" alt="User avatar" width="40" height="40"
+                                            class="rounded-circle border">
+                                        <span
+                                            class="position-absolute bottom-0 end-0 translate-middle p-1 bg-success border border-2 border-white rounded-circle"></span>
+                                    </span>
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-semibold text-dark">Annette Black</span>
+                                        <small class="text-secondary">annette@geeksui.com</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-3 py-3 fs-6" href="#">
+                                    <i class="bi bi-person fs-5 text-secondary"></i>Profile
+                                </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-3 py-3 fs-6" href="#">
+                                    <i class="bi bi-star fs-5 text-secondary"></i>Subscription
+                                </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-3 py-3 fs-6" href="#">
+                                    <i class="bi bi-gear fs-5 text-secondary"></i>Settings
+                                </a></li>
+                            <li>
+                                <hr class="dropdown-divider m-0">
+                            </li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-3 py-3 fs-6" href="#">
+                                    <i class="bi bi-power fs-5 text-secondary"></i>Sign Out
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row align-items-start align-items-lg-center g-4">
+                    <div class="col-lg-6 text-start text-lg-start">
+                        <h1 class="display-4 fw-bold">Welcome Web Students!</h1>
+                        <p class="lead mb-4">Hand-picked instructor and expertly crafted courses, designed for the
+                            modern students and entrepreneuer</p>
+                        <div class="d-flex flex-nowrap gap-2 justify-content-start hero-actions">
+                            <a class="btn btn-success btn-lg p-2 px-3 fs-6 text-nowrap" href="#">Browse courses</a>
+                            <a class="btn btn-light btn-lg p-2 px-3 fs-6 text-nowrap" href="#">Are you instructor?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <img src="assets/hero-img.png" class="img-fluid" alt="Welcome Web Students hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-4 highlights">
+            <div class="container">
+                <div class="row g-3 text-center text-lg-start align-items-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-start feature-item text-start">
+                            <span
+                                class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle me-3"
+                                style="width: 48px; height: 48px;">
+                                <i class="bi bi-collection-play text-primary fs-4"></i>
+                            </span>
+                            <div>
+                                <div class="fw-semibold text-dark">30,000 online courses</div>
+                                <small class="text-secondary">Enjoy a variety of fresh topics</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-start feature-item text-start">
+                            <span
+                                class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle me-3"
+                                style="width: 48px; height: 48px;">
+                                <i class="bi bi-mortarboard text-success fs-4"></i>
+                            </span>
+                            <div>
+                                <div class="fw-semibold text-dark">Expert instruction</div>
+                                <small class="text-secondary">Find the right instructor for you</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-start feature-item text-start">
+                            <span
+                                class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle me-3"
+                                style="width: 48px; height: 48px;">
+                                <i class="bi bi-infinity text-warning fs-4"></i>
+                            </span>
+                            <div>
+                                <div class="fw-semibold text-dark">Lifetime access</div>
+                                <small class="text-secondary">Learn on your schedule</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4 background">
+            <div class="container position-relative">
+                <h5 class="fw-semibold mb-3">Recommended to you</h5>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-graphql.jpg" class="card-img-top"
+                                alt="GraphQL Introduction to Schemas and Queries">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">GraphQL: Introduction to graphQL for beginners</h5>
+                                <small class="text-muted d-block mb-2">2h 40m • Advance</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        3.0
+                                    </span>
+                                    <small class="text-muted">(1,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$500</span><span
+                                        class="text-muted text-decoration-line-through">$600</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-5.jpg" alt="Brooklyn Simmons"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Brooklyn Simmons</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-javascript.jpg" class="card-img-top"
+                                alt="JavaScript Beginners course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">A Complete Beginner’s Guide to JavaScript</h5>
+                                <small class="text-muted d-block mb-2">4h 10m • Advance</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        3.5
+                                    </span>
+                                    <small class="text-muted">(7,750)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$700</span><span
+                                        class="text-muted text-decoration-line-through">$850</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-1.jpg" alt="Jenny Wilson"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Jenny Wilson</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-node.jpg" class="card-img-top"
+                                alt="Node.js Express MongoDB Development">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Beginning Node.js, Express & MongoDB Development</h5>
+                                <small class="text-muted d-block mb-2">2h 00m • Intermediate</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        4.0
+                                    </span>
+                                    <small class="text-muted">(15,700)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$800</span><span
+                                        class="text-muted text-decoration-line-through">$950</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-3.jpg" alt="Sina Ray" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">Sina Ray</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel Beginner to Advance">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Laravel: The Ultimate Beginner’s Guide to Learn</h5>
+                                <small class="text-muted d-block mb-2">1h 00m • Beginner</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        4.5
+                                    </span>
+                                    <small class="text-muted">(2,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$170</span><span
+                                        class="text-muted text-decoration-line-through">$220</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-7.jpg" alt="Sobo Rikhan" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">Sobo Rikhan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y ms-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y me-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="py-4 background">
+            <div class="container position-relative">
+                <h5 class="fw-semibold mb-3">Most Popular</h5>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-html.jpg" class="card-img-top" alt="HTML Course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">HTML Full Course - Build a Website Tutorial</h5>
+                                <small class="text-muted d-block mb-2">3h 16m • beginner</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        3.0
+                                    </span>
+                                    <small class="text-muted">(1,600)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$550</span><span
+                                        class="text-muted text-decoration-line-through">$700</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-8.jpg" alt="Miston Wilson"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Miston Wilson</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-javascript.jpg" class="card-img-top" alt="JavaScript course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">A Complete Beginner’s Guide to JavaScript</h5>
+                                <small class="text-muted d-block mb-2">4h 10m • Advance</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        3.5
+                                    </span>
+                                    <small class="text-muted">(7,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$700</span><span
+                                        class="text-muted text-decoration-line-through">$850</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-1.jpg" alt="Jenny Wilson"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Jenny Wilson</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-node.jpg" class="card-img-top" alt="Node Express MongoDB">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Beginning Node.js, Express & MongoDB Development</h5>
+                                <small class="text-muted d-block mb-2">2h 00m • Intermediate</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        4.0
+                                    </span>
+                                    <small class="text-muted">(15,700)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$800</span><span
+                                        class="text-muted text-decoration-line-through">$950</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-3.jpg" alt="Sina Ray" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">Sina Ray</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-react.jpg" class="card-img-top" alt="React course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">How to easily create a website with React</h5>
+                                <small class="text-muted d-block mb-2">3h 55m • Advance</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        4.5
+                                    </span>
+                                    <small class="text-muted">(1,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="fw-semibold text-dark">$600</span>
+                                    <span class="text-muted text-decoration-line-through">$750</span>
+                                </div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-2.jpg" alt="April Noms" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">April Noms</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y ms-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y me-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="py-4 background">
+            <div class="container position-relative">
+                <h5 class="fw-semibold mb-3">Trending</h5>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-gatsby.jpg" class="card-img-top" alt="Gatsby course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Revolutionize how you build the web</h5>
+                                <small class="text-muted d-block mb-2">1h 46m • Intermediate</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        2.0
+                                    </span>
+                                    <small class="text-muted">(16,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$800</span><span
+                                        class="text-muted text-decoration-line-through">$850</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-6.jpg" alt="Jenny Wilson"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Jenny Wilson</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-html.jpg" class="card-img-top" alt="HTML Course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">HTML Full Course: Build a Website Tutorial</h5>
+                                <small class="text-muted d-block mb-2">3h 16m • Beginner</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        3.0
+                                    </span>
+                                    <small class="text-muted">(1,600)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$550</span><span
+                                        class="text-muted text-decoration-line-through">$700</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-8.jpg" alt="Miston Wilson"
+                                                class="rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">Miston Wilson</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-node.jpg" class="card-img-top" alt="Node Express MongoDB">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Beginning Node.js, Express & MongoDB Development</h5>
+                                <small class="text-muted d-block mb-2">2h 00m • Intermediate</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        4.0
+                                    </span>
+                                    <small class="text-muted">(15,700)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$800</span><span
+                                        class="text-muted text-decoration-line-through">$950</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-3.jpg" alt="Sina Ray" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">Sina Ray</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-sm-none d-md-none d-lg-block">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel course">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Laravel: The Ultimate Beginner’s Guide to Learn</h5>
+                                <small class="text-muted d-block mb-2">1h 00m • Beginner</small>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning me-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        4.5
+                                    </span>
+                                    <small class="text-muted">(2,500)</small>
+                                </div>
+                                <div class="d-flex align-items-center gap-2"><span
+                                        class="fw-semibold text-dark">$170</span><span
+                                        class="text-muted text-decoration-line-through">$220</span></div>
+                                <div class="mt-auto w-100">
+                                    <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center margin">
+                                            <img src="assets/avatar-7.jpg" alt="Sobo Rikhan" class="rounded-circle me-2"
+                                                width="32" height="32">
+                                            <small class="text-muted">Sobo Rikhan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y ms-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button"
+                    class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y me-n3 d-lg-none arrow-btn">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light py-4 background">
+        <hr class="my-3 border-top border-secondary mx-n3 w-auto">
+        <div class="container">
+            <div
+                class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between gap-2 text-secondary small text-center text-lg-start">
+                <span class="w-100 text-center text-lg-start">© 2022 Geeks. All Rights Reserved.</span>
+                <div
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end gap-3 w-100">
+                    <a href="#" class="text-decoration-none text-secondary">Privacy</a>
+                    <a href="#" class="text-decoration-none text-secondary">Terms</a>
+                    <a href="#" class="text-decoration-none text-secondary">Feedback</a>
+                    <a href="#" class="text-decoration-none text-secondary">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

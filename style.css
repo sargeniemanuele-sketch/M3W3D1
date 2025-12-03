@@ -1,0 +1,23 @@
+.navbar,
+.navbar-expand-lg,
+.bg-body-tertiary {
+    background-color: white !important;
+}
+
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-color: hsl(255deg 22.22% 96.47%) !important;
+}
+
+.d-inline-flex.align-items-center.justify-content-center.bg-light.rounded-circle.me-3 {
+    background-color: hsl(33.16deg 100% 92.55%) !important;
+}

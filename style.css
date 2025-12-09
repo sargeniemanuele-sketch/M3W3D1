@@ -21,3 +21,62 @@
 .d-inline-flex.align-items-center.justify-content-center.bg-light.rounded-circle.me-3 {
     background-color: hsl(33.16deg 100% 92.55%) !important;
 }
+
+/* LE TRANSIZIONI LE HO FATTE LENTE APPOSITAMENTE PER FAR VEDERE CHE APPAIONO, ALTRIMENTI LE AVREI MESSE A 0.2 */
+
+.icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    position: relative;
+}
+
+.icone i {
+    position: absolute;
+    transition: opacity 1s linear;
+}
+
+.icone .bi-bookmark {
+    opacity: 1;
+}
+
+.icone .bi-bookmark-fill {
+    opacity: 0;
+}
+
+.icone:hover .bi-bookmark {
+    opacity: 0;
+}
+
+.icone:hover .bi-bookmark-fill {
+    opacity: 1;
+}
+
+.card-transition {
+    transition: transform .5s linear, box-shadow .5s linear;
+    cursor: pointer;
+}
+
+.card-transition:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18) !important;
+    ;
+}
+
+
+.hero-actions .btn {
+    transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+}
+
+.hero-actions .btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+
+.hero-actions .btn-light:hover {
+    background-color: #bdc8d5;
+}
